@@ -1,3 +1,30 @@
-html {
-  margin: 0;
+html,body
+{
+  //margin: 0;
+  //padding: 0;
+  //border: 0;
+  background-color: #c1e2b3; // get attention "pattern subject"
 }
+
+main
+{
+  //margin: 0;
+  //padding: 0;
+  //border: 0;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px;
+  background-color: red; // get attention "pattern subject"
+  //width: 100%; // get attention "size subject"
+  height: 90%; // ? tak zostawić ?
+}
+section
+{
+  background-color: lightblue;
+}
+// jezeli bedzie potrzebne nadanie specyficznych właściwości poszczegolnym
+// wielkościom bootstrapowym to wymagane jest doinstalowanie (moze czas bawic sie npm ?? ) bootstrapa z npm
+// https://github.com/twbs/bootstrap-sass#d-npm--nodejs
+// przykład
+//@media (min-width: @screen-md-min) {
+//}

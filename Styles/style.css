@@ -1,4 +1,14 @@
-html {
-  margin: 0; }
+html, body {
+  background-color: #c1e2b3; }
+
+main {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px;
+  background-color: red;
+  height: 90%; }
+
+section {
+  background-color: lightblue; }
 
 /*# sourceMappingURL=style.css.map */
