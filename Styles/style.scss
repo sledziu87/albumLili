@@ -1,16 +1,17 @@
+*{border: black solid 1px}
 html,body
 {
-  //margin: 0;
-  //padding: 0;
-  //border: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
   background-color: #c1e2b3; // get attention "pattern subject"
 }
 
 main
 {
-  //margin: 0;
-  //padding: 0;
-  //border: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
   margin-right: auto;
   margin-left: auto;
   max-width: 1200px;
@@ -21,6 +22,11 @@ main
 section
 {
   background-color: lightblue;
+}
+
+article
+{
+  background-color: #4cae4c;
 }
 // jezeli bedzie potrzebne nadanie specyficznych właściwości poszczegolnym
 // wielkościom bootstrapowym to wymagane jest doinstalowanie (moze czas bawic sie npm ?? ) bootstrapa z npm
