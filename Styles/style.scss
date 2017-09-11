@@ -38,6 +38,7 @@ article
   //max-width: 100%;
   background-color: #4cae4c;
 }
+
 // jezeli bedzie potrzebne nadanie specyficznych właściwości poszczegolnym
 // wielkościom bootstrapowym to wymagane jest doinstalowanie (moze czas bawic sie npm ?? ) bootstrapa z npm
 // https://github.com/twbs/bootstrap-sass#d-npm--nodejs
@@ -53,4 +54,20 @@ footer
   width: 100%;
   bottom: 0;
   text-align: center;
+}
+
+.header__nav_collapse_age-time
+{
+
+//  miejsce na klasy dla JStowego zegara lat
+}
+
+.main__section-up-r_date
+{
+//  archiwum
+}
+
+.main__section-up-r_ad
+{
+  //  reklama
 }
