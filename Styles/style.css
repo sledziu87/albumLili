@@ -4,6 +4,9 @@ html, body {
   border: 0;
   background-color: #c1e2b3; }
 
+body {
+  padding-top: 70px; }
+
 main {
   max-width: 100%; }
 
