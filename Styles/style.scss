@@ -1,31 +1,41 @@
 *{border: black solid 1px}
 html,body
 {
-  margin: 0;
+  //width: 100%;
+  //margin: 0;
   padding: 0;
   border: 0;
   background-color: #c1e2b3; // get attention "pattern subject"
+  //margin-right: auto;
+  //margin-left: auto;
+  //max-width: 1200px;
 }
 
 main
 {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 1200px;
-  background-color: red; // get attention "pattern subject"
+  //margin: 0;
+  //padding: 0;
+  //border: 0;
+  min-width: 250px; // USTAWIĆ EKRAN (wyciemniający w postaci najładki na obraz) PROSZĄCY O OBRUCENIE URZĄDZENIA MOBILNEGO
+  //margin-right: auto;
+  //margin-left: auto;
+  max-width: 100%;
+  //max-width: 1200px;
+
+  //background-color: red; // get attention "pattern subject"
+
   //width: 100%; // get attention "size subject"
-  height: 90%; // ? tak zostawić ?
+  //height: 90%; // ? tak zostawić ?
 }
 section
 {
+  //max-width: 100%;
   background-color: lightblue;
 }
 
 article
 {
+  //max-width: 100%;
   background-color: #4cae4c;
 }
 // jezeli bedzie potrzebne nadanie specyficznych właściwości poszczegolnym
@@ -34,3 +44,13 @@ article
 // przykład
 //@media (min-width: @screen-md-min) {
 //}
+//p
+//{max-width: 100%;}
+
+footer
+{
+  background-color: #42BA85;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+}

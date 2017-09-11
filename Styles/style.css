@@ -2,25 +2,24 @@
   border: black solid 1px; }
 
 html, body {
-  margin: 0;
   padding: 0;
   border: 0;
   background-color: #c1e2b3; }
 
 main {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 1200px;
-  background-color: red;
-  height: 90%; }
+  min-width: 250px;
+  max-width: 100%; }
 
 section {
   background-color: lightblue; }
 
 article {
   background-color: #4cae4c; }
+
+footer {
+  background-color: #42BA85;
+  width: 100%;
+  bottom: 0;
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */
