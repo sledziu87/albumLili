@@ -1,6 +1,7 @@
 //*{border: black solid 1px}
 html,body
 {
+  min-width: 250px;
   //width: 100%;
   //margin: 0;
   padding: 0;
@@ -16,7 +17,7 @@ main
   //margin: 0;
   //padding: 0;
   //border: 0;
-  min-width: 250px; // USTAWIĆ EKRAN (wyciemniający w postaci najładki na obraz) PROSZĄCY O OBRUCENIE URZĄDZENIA MOBILNEGO
+  // USTAWIĆ EKRAN (wyciemniający w postaci najładki na obraz) PROSZĄCY O OBRUCENIE URZĄDZENIA MOBILNEGO
   //margin-right: auto;
   //margin-left: auto;
   max-width: 100%;
