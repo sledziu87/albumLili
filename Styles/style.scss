@@ -1,4 +1,7 @@
+@import 'SCSS/_scss.scss';
+
 //*{border: black solid 1px}
+
 html,body
 {
   min-width: 250px;
@@ -75,4 +78,14 @@ footer
 .main__section-up-r_ad
 {
   //  reklama
+}
+
+.header__nav__collapse__menu
+{
+  text-align: center;
+}
+
+.header__nav__shadow
+{
+  border-bottom: #8D9BCF medium ridge; // #5D7FC4 do analizy przy zastosowanych patternach. Może zmienić na szary przechodzacy w kolor niebieski albo sam szary?
 }
