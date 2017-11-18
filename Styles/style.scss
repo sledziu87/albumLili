@@ -64,28 +64,41 @@ footer
   text-align: center;
 }
 
-.header__nav_collapse_age-time
-{
-
-//  miejsce na klasy dla JStowego zegara lat
+.grid {
+  display:grid;
+  //grid-template-columns: 200px 1fr 1fr;
 }
 
-.main__section-up-r_date
-{
-//  archiwum
-}
+//.grid div:nth-child(even){
+//  background-color: red;
+//}
+//grid div:nth-child(odd){
+//  background-color: green;
+//}
 
-.main__section-up-r_ad
-{
-  //  reklama
-}
 
-.header__nav__collapse__menu
-{
-  text-align: center;
-}
-
-.header__nav__shadow
-{
-  border-bottom: #8D9BCF medium ridge; // #5D7FC4 do analizy przy zastosowanych patternach. Może zmienić na szary przechodzacy w kolor niebieski albo sam szary?
-}
+//.header__nav_collapse_age-time
+//{
+//
+////  miejsce na klasy dla JStowego zegara lat
+//}
+//
+//.main__section-up-r_date
+//{
+////  archiwum
+//}
+//
+//.main__section-up-r_ad
+//{
+//  //  reklama
+//}
+//
+//.header__nav__collapse__menu
+//{
+//  text-align: center;
+//}
+//
+//.header__nav__shadow
+//{
+//  border-bottom: #8D9BCF medium ridge; // #5D7FC4 do analizy przy zastosowanych patternach. Może zmienić na szary przechodzacy w kolor niebieski albo sam szary?
+//}

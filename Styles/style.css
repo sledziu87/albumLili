@@ -22,10 +22,7 @@ footer {
   bottom: 0;
   text-align: center; }
 
-.header__nav__collapse__menu {
-  text-align: center; }
-
-.header__nav__shadow {
-  border-bottom: #8D9BCF medium ridge; }
+.grid {
+  display: grid; }
 
 /*# sourceMappingURL=style.css.map */
