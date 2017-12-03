@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Liliana</title>
-    <link href="plugins/bootstrap-3.3.7-dist/css/bootstrap.min.css" type="text/css" rel="stylesheet" media="all"/>
+    <!--<link href="plugins/bootstrap-3.3.7-dist/css/bootstrap.min.css" type="text/css" rel="stylesheet" media="all"/>-->
     <link rel="stylesheet" type="text/css" href="Styles/style.css"/>
-    <script src="plugins/isotope/isotope.pkgd.min.js"></script> <!--Możliwe że będzie konieczne przeniesienie tego dodatku ponizej bootstrapa-->
+    <script src="plugins/isotope/isotope.pkgd.min.js"></script> <!--Mozliwe ze te wtyczke zastapie CSS Gridem -->
     <script src="plugins/jquery_3.2.1/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"> </script>
     <script src="plugins/bootstrap-3.3.7-dist/js/bootstrap.min.js" type="text/javascript" charset="utf-8"> </script>
     <script src="Scripts/script.js"> </script>
@@ -13,82 +13,35 @@
     <!-- TODO- znalezc stosowne fonty a ich wielkosc uzaleznic od rozmiarów matrycy. Zwrocic uwage na czytelnosc przy mobilnych-->
     <!-- TODO- znalezc stosowny wygląd tła - temat rozbudowany o zmienne tło (pattern) w zaleznosci od pory roku -->
 </head>
-<!--<body>-->
-<body  class="grid">
-<header class="header">
+<body>
+<!--<body  class="body_grid">-->
     <!--<div class="grid">-->
-    <!--<div>2</div>-->
-    <!--<div>3</div>-->
-    <!--<div>4</div>-->
-    <!--<div>5</div>-->
-    <!--<div>6</div>-->
-    <!--<div>7</div>-->
-    <!--</div>-->
-    <!--<nav class="header__nav__shadow">-->
-    <nav>
-        <ul></ul>
-    </nav>
-    <nav class="navbar navbar-default navbar-fixed-top col-xs-12 header__nav__shadow">
-        <!--TODO- Dopasować kolor paska pod nav :)&ndash;&gt;-->
-        <div class="col-lg-offset-1 col-lg-10">
-            <div class="container-fluid">
-
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header ">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <div class="navbar-brand " >Little Lili's World</div>
-                </div>
-
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> <!--czy pod to ID coś się odwołuje? -->
-
-
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#" class="header__nav__collapse__menu" >Modal ARCHIWUM</a></li>
-                        <!-- jak zrobic to zeby po kliknieciu w np "sierpien" wyswietlic zbior zdjec z tego miesiaca a inne ukryc. Dodatkowo automatyzacja dla nowo tworzonych miesiecy-->
-                        <li><a href="#" type="button" class="header__nav_collapse_age-time btn btn-default"> ile mam lat </a>
-                            <!--TODO - WSTAWIC LICZNIK LAT ZROBIONY W JS - ZAMIAST BUTTONA-->
-                        </li>
-                    </ul>
-                </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
-        </div>
-    </nav>
-</header>
-<main>
-    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10 ">
-        <p>just paragraf</p>
-        <div class="container-fluid">
-            <div class="row">
-                <section class="col-xs-12  col-md-8 main__section-down-l">
-                    <!--//blue GALERIA//-->
-                    <p>GALERIA</p>
-                </section>
-                <section class="col-xs-12 col-md-4 main__section-up-r">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <article class="col-xs-12 col-sm-6 col-md-12 main__section-up-r_date">
-                                <!--//green// DODATKI typu reklama / archiwum itp-->
-                                <p>przeglad okresu archiwalnego</p>
-                            </article>
-                            <article class="col-xs-12 col-sm-6 col-md-12 main__section-up-r_ad">
-                                <p> ++miejsce na ewentualna reklame</p>
-                            </article>
-                        </div>
-                    </div>
-                </section>
+        <header class="header_grid">
+            <div class="nav_brand position_vertical" ><button>Little Lili's World</button></div>
+            <div class="nav_right position_vertical">
+                <div class="archive testBorder"><button>Modal ARCHIWUM</button></div>
+                <div class="age testBorder"><button>LICZNIK LAT JS</button></div>
             </div>
-        </div>
-    </div>
-    <div class="clearfix"> </div>
-</main>
-<footer class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-offset-1 col-md-10">
-    <p> stopka</p>
-</footer>
+        </header>
+
+<!--<div class="navbar-brand " >Little Lili's World</div>-->
+      <!--<ul class="nav navbar-nav navbar-right">-->
+                        <!--<li><a href="#" class="header__nav__collapse__menu" >Modal ARCHIWUM</a></li>-->
+                        <!--&lt;!&ndash; jak zrobic to zeby po kliknieciu w np "sierpien" wyswietlic zbior zdjec z tego miesiaca a inne ukryc. Dodatkowo automatyzacja dla nowo tworzonych miesiecy&ndash;&gt;-->
+                        <!--<li>-->
+                            <!--&lt;!&ndash;TODO - WSTAWIC LICZNIK LAT ZROBIONY W JS - ZAMIAST BUTTONA&ndash;&gt;-->
+                        <!--</li>-->
+                    <!--</ul>-->
+
+
+
+        <main class="main">
+            <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+
+
+        </main>
+
+        <footer class="footer"> <p>stopka</p></footer>
+    <!--</div>-->
 </body>
 </html>

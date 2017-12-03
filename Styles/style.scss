@@ -47,14 +47,6 @@ article
   background-color: #4cae4c;
 }
 
-// jezeli bedzie potrzebne nadanie specyficznych właściwości poszczegolnym
-// wielkościom bootstrapowym to wymagane jest doinstalowanie (moze czas bawic sie npm ?? ) bootstrapa z npm
-// https://github.com/twbs/bootstrap-sass#d-npm--nodejs
-// przykład
-//@media (min-width: @screen-md-min) {
-//}
-//p
-//{max-width: 100%;}
 
 footer
 {
@@ -64,16 +56,82 @@ footer
   text-align: center;
 }
 
-.grid {
-  display:grid;
-  //grid-template-columns: 200px 1fr 1fr;
+.footer {
+  grid-area: footer;
 }
 
-//.grid div:nth-child(even){
-//  background-color: red;
+
+.main{
+  grid-area: main;
+  background-color: #777777;
+}
+
+//.body_grid {
+//  grid-area: body;
+//  display: grid;
+//  grid-template-columns: 1fr 1fr 1fr;
+//  grid-template-rows: 1fr 1fr 1fr;
+//  grid-template-areas:
+//          ". header ."
+//            ";
 //}
-//grid div:nth-child(odd){
-//  background-color: green;
+
+.header_grid{
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "navBrand navRight";
+  //
+  background-color: #F8F8F8;
+  min-height: 40px;
+}
+.nav_brand {
+  grid-area: navBrand;
+
+  //
+  background-color: red;
+}
+.position_vertical{
+  align-self: center; // Pozycjonuje góra dół obcinając niezapelnioną powierzchnię. Zwrócić uwagę, może trzeba dodać padding itp !!!
+}
+
+.nav_right {
+  grid-area: navRight;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "archive age";
+  justify-self: end;
+
+}
+
+.archive {
+  grid-area: archive;
+}
+
+.age {
+  grid-area: age;
+}
+
+
+
+.navbar{
+  grid-area: navbar;
+}
+
+
+.testBorder { // do usuniecia
+  border: 1px blue solid;
+}
+
+//.grid {
+//  display:grid;
+//  grid-template-columns: 1fr 1fr; // dopasować szerokość marginesow do poszczegolnych ekranow - mediaQ
+//  grid-template-areas:
+//"header header"
+//  "main main"
+//  "footer footer";
 //}
 
 
