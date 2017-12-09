@@ -4,49 +4,26 @@
 
 html,body
 {
+  margin: 0 0;
   min-width: 250px;
-  //width: 100%;
-  //margin: 0;
   padding: 0;
   border: 0;
   background-color: #c1e2b3; // get attention "pattern subject"
-  //margin-right: auto;
-  //margin-left: auto;
-  //max-width: 1200px;
-}
-
-body
-{
-  padding-top: 70px;
 }
 
 main
 {
-  //margin: 0;
-  //padding: 0;
-  //border: 0;
-  // USTAWIĆ EKRAN (wyciemniający w postaci najładki na obraz) PROSZĄCY O OBRUCENIE URZĄDZENIA MOBILNEGO
-  //margin-right: auto;
-  //margin-left: auto;
-  max-width: 100%;
-  //max-width: 1200px;
-
-  //background-color: red; // get attention "pattern subject"
-  //width: 100%; // get attention "size subject"
-  //height: 90%; // ? tak zostawić ?
+  max-width: 100%; // zbędne ?
 }
 section
 {
-  //max-width: 100%;
   background-color: lightblue;
 }
 
 article
 {
-  //max-width: 100%;
   background-color: #4cae4c;
 }
-
 
 footer
 {
@@ -60,35 +37,37 @@ footer
   grid-area: footer;
 }
 
-
 .main{
   grid-area: main;
   background-color: #777777;
 }
 
-//.body_grid {
-//  grid-area: body;
-//  display: grid;
-//  grid-template-columns: 1fr 1fr 1fr;
-//  grid-template-rows: 1fr 1fr 1fr;
-//  grid-template-areas:
-//          ". header ."
-//            ";
-//}
+.body_grid {
+  grid-area: body;
+  display: grid;
+  grid-template-columns: $lgFr 1fr $lgFr;
+  // TODO dodać max-width aby obraz na wielkich ekranach nie był rozjechany
+  //grid-template-rows: 1fr 1fr 1fr; // TODO tutaj mozna sprecyzowac szerokość paska nav
+  grid-template-areas:
+          "header header header"
+          ". main ."
+          ". footer .";
+}
+
 
 .header_grid{
   grid-area: header;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: $lgFr 1fr 1fr $lgFr;
   grid-template-areas:
-  "navBrand navRight";
+  ". navBrand navRight .";
   //
   background-color: #F8F8F8;
   min-height: 40px;
 }
+
 .nav_brand {
   grid-area: navBrand;
-
   //
   background-color: red;
 }
@@ -103,7 +82,6 @@ footer
   grid-template-areas:
   "archive age";
   justify-self: end;
-
 }
 
 .archive {
@@ -112,51 +90,17 @@ footer
 
 .age {
   grid-area: age;
+  justify-self: end;
 }
-
-
 
 .navbar{
   grid-area: navbar;
 }
 
-
-.testBorder { // do usuniecia
-  border: 1px blue solid;
-}
-
-//.grid {
-//  display:grid;
-//  grid-template-columns: 1fr 1fr; // dopasować szerokość marginesow do poszczegolnych ekranow - mediaQ
-//  grid-template-areas:
-//"header header"
-//  "main main"
-//  "footer footer";
-//}
-
-
-//.header__nav_collapse_age-time
-//{
-//
-////  miejsce na klasy dla JStowego zegara lat
-//}
-//
-//.main__section-up-r_date
-//{
-////  archiwum
-//}
-//
-//.main__section-up-r_ad
-//{
-//  //  reklama
-//}
-//
-//.header__nav__collapse__menu
-//{
-//  text-align: center;
-//}
-//
 //.header__nav__shadow
 //{
 //  border-bottom: #8D9BCF medium ridge; // #5D7FC4 do analizy przy zastosowanych patternach. Może zmienić na szary przechodzacy w kolor niebieski albo sam szary?
 //}
+
+
+/// dopasowanie szerokosci paska navigacyjnego i wstepny css grid zakonczyny CHYBA
