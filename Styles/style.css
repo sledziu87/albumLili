@@ -1,4 +1,68 @@
-html {
-  margin: 0; }
+html, body {
+  margin: 0 0;
+  min-width: 250px;
+  padding: 0;
+  border: 0;
+  background-color: #c1e2b3; }
+
+main {
+  max-width: 100%; }
+
+section {
+  background-color: lightblue; }
+
+article {
+  background-color: #4cae4c; }
+
+footer {
+  background-color: #42BA85;
+  width: 100%;
+  bottom: 0;
+  text-align: center; }
+
+.footer {
+  grid-area: footer; }
+
+.main {
+  grid-area: main;
+  background-color: #777777; }
+
+.body_grid {
+  grid-area: body;
+  display: grid;
+  grid-template-columns: 15% 1fr 15%;
+  grid-template-areas: "header header header" ". main ." ". footer ."; }
+
+.header_grid {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 15% 1fr 1fr 15%;
+  grid-template-areas: ". navBrand navRight .";
+  background-color: #F8F8F8;
+  min-height: 40px; }
+
+.nav_brand {
+  grid-area: navBrand;
+  background-color: red; }
+
+.position_vertical {
+  align-self: center; }
+
+.nav_right {
+  grid-area: navRight;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "archive age";
+  justify-self: end; }
+
+.archive {
+  grid-area: archive; }
+
+.age {
+  grid-area: age;
+  justify-self: end; }
+
+.navbar {
+  grid-area: navbar; }
 
 /*# sourceMappingURL=style.css.map */
