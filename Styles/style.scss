@@ -1,9 +1,15 @@
 @import 'SCSS/_scss.scss';
 
 //*{border: black solid 1px}
+.f_cookie {
+  font-family: 'Cookie', cursive;
+}
 
-html,body
-{
+.f_lato {
+  font-family: 'Lato', sans-serif;
+}
+
+html,body {
   margin: 0 0;
   min-width: 250px;
   padding: 0;
@@ -11,25 +17,22 @@ html,body
   background-color: #c1e2b3; // get attention "pattern subject"
 }
 
-main
-{
+main {
   max-width: 100%; // zbędne ?
 }
-section
-{
+
+section {
   background-color: lightblue;
 }
 
-article
-{
+article {
   background-color: #4cae4c;
 }
 
-footer
-{
+footer {
   background-color: #42BA85;
   width: 100%;
-  bottom: 0;
+  bottom: 0;  // do poprawki
   text-align: center;
 }
 
@@ -39,6 +42,7 @@ footer
 
 .main{
   grid-area: main;
+  //
   background-color: #777777;
 }
 
@@ -55,12 +59,14 @@ footer
 }
 
 
-.header_grid{
+.header_grid {
   grid-area: header;
   display: grid;
   grid-template-columns: $lgFr 1fr 1fr $lgFr;
   grid-template-areas:
   ". navBrand navRight .";
+  grid-template-rows:1fr; // wymagane dla chrome !!!
+
   //
   background-color: #F8F8F8;
   min-height: 40px;
@@ -69,8 +75,19 @@ footer
 .nav_brand {
   grid-area: navBrand;
   //
-  background-color: red;
 }
+
+.nav_brand_color{
+  color: #8c92ac;
+  text-shadow: 1px 1px black;
+
+  //color: silver;
+  //text-shadow: 1px 1px black; // kolor miejsce 3 silver + black
+
+  //color: #b2beb5;
+  //text-shadow: 1px 1px black; // wybór nr 2 color #b2beb5 z cieniem czarnym
+}
+
 .position_vertical{
   align-self: center; // Pozycjonuje góra dół obcinając niezapelnioną powierzchnię. Zwrócić uwagę, może trzeba dodać padding itp !!!
 }
@@ -93,7 +110,7 @@ footer
   justify-self: end;
 }
 
-.navbar{
+.navbar {
   grid-area: navbar;
 }
 
@@ -103,4 +120,9 @@ footer
 //}
 
 
-/// dopasowanie szerokosci paska navigacyjnego i wstepny css grid zakonczyny CHYBA
+/// za wczesnie na wprowadzenie mediaQ. Należy najpierw wuystylować dokładnie co i jak ma wyglądać. Stworzyć zegar lat i inne szczegóły. Potem mozna wprowadzić media !!!
+
+// POMYSŁ spróbować dać tło (duże lub średnie ekrany) części centralnej jako przeźrocze i czarne "wysepki" na których będą wyświetlone zdjęcia. PATRZ MOKUP
+
+// !!! teraz robimy dokładną stylizacje navbar, dobieramy czcionki, Przyklejamy pasek do górnej strefy, nadajemy cień,  dopracowujemy BRAND aby wygladał przyzwoicie. TODO
+
